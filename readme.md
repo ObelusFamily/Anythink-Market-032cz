@@ -10,4 +10,19 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
+The first thing after cloned the repo is installing [Docker](https://docs.docker.com/get-docker/).
+To test if Docker is up and running you can run inside a terminal those commands:
+```bash
+docker -v
+docker-compose -v
+```
+
+If all commands are ok you can start the project with the command
+
+```bash
+docker-compose up
+```
+After the container is up you can point the browser to [http://localhost:3000/api/ping](http://localhost:3000/api/ping) to test it it's ok
+and then create the first user for the application to this url [http://localhost:3001/register](http://localhost:3001/register)
+
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_

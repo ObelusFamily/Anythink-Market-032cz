@@ -145,7 +145,7 @@ router.post("/", auth.required, function (req, res, next) {
       }
 
       var item = new Item(req.body.item);
-      item.image = req.body.item.image ? req.body.item.image : '/placeholder.png';
+      item.image = req.body.item.image ? req.body.item.image : '/placeholder.png'
 
       item.seller = user;
 

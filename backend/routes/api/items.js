@@ -74,7 +74,7 @@ router.get("/", auth.optional, function (req, res, next) {
       }
 
       if (title) {
-        query.title = { "$regex": title, "$options": i }
+        query.title = title
       }
 
       return Promise.all([
